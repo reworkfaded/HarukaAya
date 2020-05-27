@@ -25,7 +25,7 @@ from requests import get
 # This module was inspired by Android Helper Bot by Vachounet.
 # None of the code is taken from the bot itself, to avoid any more confusion.
 
-LOGGER.info("Original Android Modules by @RealAkito on Telegram")
+LOGGER.info("Original Android Modules by @Unknown_Hacker_X on Telegram")
 
 
 @run_async
@@ -304,7 +304,7 @@ def evo(bot: Bot, update: Update):
 
     if device == 'gsi':
         reply_text = """
-Please check Evolution Updates channel! @EvolutionXUpdates or Click the button down below to download the GSIs!
+Please check Evolution Updates Group! @RemoticBotSupport or Click the button down below to download the GSIs!
 """
         keyboard = [[InlineKeyboardButton(text="Click to Download", url="https://sourceforge.net/projects/evolution-x/files/GSI/")]]
         message.reply_text(reply_text, reply_markup=InlineKeyboardMarkup(keyboard), parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True)
@@ -507,7 +507,7 @@ def bootleggers(bot: Bot, update: Update):
 
 
 __help__ = """
-*This module is made with love by* @RealAkito *and code beauty by* @kandnub
+*This module is made with love by* @Unknown_Hacker_X *and code beauty by* @LeaderMasked . 
  *Device Specific Rom*
  - /pearl <device>: Get the Pearl Rom
  - /havoc <device>: Get the Havoc Rom
