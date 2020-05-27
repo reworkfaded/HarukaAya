@@ -122,7 +122,7 @@ def start(bot: Bot, update: Update, args: List[str]):
             send_start(bot, update)
     else:
         try:
-            update.effective_message.reply_text("Hey there! I'm alive :3")
+            update.effective_message.reply_text("Hey There! PM Me If You Have Any Questions On How To Use Me!")
         except:
             print("Nut")
 
@@ -135,15 +135,22 @@ def send_start(bot, update):
         pass
 
     #chat = update.effective_chat  # type: Optional[Chat] and unused variable
-    text = "Hey there! My name is Test - I'm here to help you manage your groups!\n\
-Click Help button to find out more about how to use me to my full potential.\n\n"
+    text = "Hey *{}*  - I'm A Group Management Bot , Here To Manage Your Groups .
+
+Made With Love And Maintained By [This Awesome Person](https://t.me/LeaderMasked) . 
+
+Special Thanks To [This Noob](https://t.me/Unknown_Hacker_X) . 
+
+Click *HELP* Button To Know More About My Full Potential Use! 
+
+Want To Add Me To Your Chats ? [Click Here!](http://telegram.me/Remotic_Bot?startgroup=botstart)  ."
 
     text += " Teat "
 
-    keyboard = [[InlineKeyboardButton(text="📢 Support Group", url="https://t.me/HarukaAyaGroup")]]
+    keyboard = [[InlineKeyboardButton(text="📢 Support Group", url="https://t.me/RemoticBotSupport")]]
     keyboard += [[InlineKeyboardButton(text="🛠 Control panel", callback_data="cntrl_panel_M")]]
-    keyboard += [[InlineKeyboardButton(text="🇺🇸 Language", callback_data="set_lang_"), 
-        InlineKeyboardButton(text="❔ Help", callback_data="help_back")]]
+    keyboard += [[InlineKeyboardButton(text="🇮🇳 Language", callback_data="set_lang_"), 
+        InlineKeyboardButton(text="Help ❔", callback_data="help_back")]]
 
     update.effective_message.reply_text(text, reply_markup=InlineKeyboardMarkup(keyboard), parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True)
 
